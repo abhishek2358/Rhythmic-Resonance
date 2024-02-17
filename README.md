@@ -13,7 +13,6 @@ git clone https://github.com/abhishek2358/Rhythmic-Resonance-Music-Generation-us
 
 ## Training
 ```sh
-# Train the LSTM with Local Attention model using all available files, for 100 epochs, on the default device, saving snapshots every 200 epochs, and not using a checkpoint
 python train.py -m lstm_attn
 ```
 
