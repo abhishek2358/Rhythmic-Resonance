@@ -1,0 +1,30 @@
+[global]
+dataset = "mastero"
+random_slice_seed = 123
+val_ratio = 0.1
+train_val_split_seed = 666
+
+[model.lstm_attn]
+lr = 1e-3
+seq_len = 128
+batch_size = 64
+n_notes = 128
+hidden_dim = 512
+dropout_p = 0.5
+clip_grad = 5.0
+
+[sampling.default]
+strategy = "stochastic"
+top_p = 0.9
+top_k = 4
+repeat_decay = 0.6
+temperature = 1.5
+hint = ["1"]
+
+[sampling.beta]
+strategy = "stochastic"
+top_p = 0.9
+top_k = 4
+repeat_decay = 0.6
+temperature = 1.2
+hint = ["1", "3"]
