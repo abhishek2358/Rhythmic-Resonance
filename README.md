@@ -13,7 +13,6 @@ git clone https://github.com/abhishek2358/Rhythmic-Resonance-Music-Generation-us
 
 ## Training
 ```sh
-# Train the LSTM with Local Attention model using all available files, for 100 epochs, on the default device, saving snapshots every 200 epochs, and not using a checkpoint
 python train.py -m lstm_attn
 ```
 
@@ -26,6 +25,5 @@ Specify the path to the checkpoint file for the model using the -c followed by a
 The resulting MIDI file will be named according to the -o.
 
 ```sh
-# Generate a predicted sequence using the LSTM with Local Attention model, from beats by the user using the keyboard, using the checkpoint at ./.project_data/snapshots/my_checkpoint.pth, on the default device, and using the beta profile with default settings
 python predict_stream.py -c ./.project_data/snapshots/my_checkpoint.pth
 ```
