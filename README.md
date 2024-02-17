@@ -26,6 +26,5 @@ Specify the path to the checkpoint file for the model using the -c followed by a
 The resulting MIDI file will be named according to the -o.
 
 ```sh
-# Generate a predicted sequence using the LSTM with Local Attention model, from beats by the user using the keyboard, using the checkpoint at ./.project_data/snapshots/my_checkpoint.pth, on the default device, and using the beta profile with default settings
 python predict_stream.py -c ./.project_data/snapshots/my_checkpoint.pth
 ```
